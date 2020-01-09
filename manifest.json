@@ -1,0 +1,17 @@
+{
+  "name": "Enquiry SMS Sender by Load Infotech",
+  "version": "2.90",
+  "manifest_version": 2,
+  "description": "Sends SMS to customer when Enquiry and Invoice is done.",
+  "browser_action": {
+    "default_icon": "border-48.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [ "https://hirise.honda2wheelersindia.com/*", "storage" ],
+  "content_scripts": [
+    {
+      "js": [ "jquery-3.2.0.min.js","ssiebjss.js","notify.min.js","siebjsh.js","siebjsdo.js","siebjscdp.js","siebjsev.js","siebjspda.js" ],
+      "matches": [ "*://*/*" ]
+    }
+  ]
+}
